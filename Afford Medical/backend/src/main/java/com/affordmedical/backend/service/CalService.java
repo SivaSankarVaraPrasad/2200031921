@@ -31,7 +31,7 @@ public class CalService {
         headers.set("Authorization", "Bearer " + accessKey);
           HttpEntity<String> entity = new HttpEntity<>(headers);
 
-        // Fetch the data from the API
+        
         ResponseEntity<NumbersResponse> response = restTemplate.exchange(
             url,
             HttpMethod.GET,
@@ -39,7 +39,7 @@ public class CalService {
             NumbersResponse.class
         );
 
-        // Extract numbers from the response body
+        
         List<Integer> numbers = response.getBody().getNumbers();
         
        OptionalDouble average = numbers.stream()
@@ -56,7 +56,7 @@ public class CalService {
         headers.set("Authorization", "Bearer " + accessKey);
           HttpEntity<String> entity = new HttpEntity<>(headers);
 
-        // Fetch the data from the API
+     
         ResponseEntity<NumbersResponse> response = restTemplate.exchange(
             url,
             HttpMethod.GET,
@@ -64,7 +64,7 @@ public class CalService {
             NumbersResponse.class
         );
 
-        // Extract numbers from the response body
+     
         List<Integer> numbers = response.getBody().getNumbers();
         
        OptionalDouble average = numbers.stream()
@@ -81,7 +81,7 @@ public class CalService {
         headers.set("Authorization", "Bearer " + accessKey);
           HttpEntity<String> entity = new HttpEntity<>(headers);
 
-        // Fetch the data from the API
+        
         ResponseEntity<NumbersResponse> response = restTemplate.exchange(
             url,
             HttpMethod.GET,
@@ -89,7 +89,8 @@ public class CalService {
             NumbersResponse.class
         );
 
-        // Extract numbers from the response body
+        
+         
         List<Integer> numbers = response.getBody().getNumbers();
         
        OptionalDouble average = numbers.stream()
@@ -107,7 +108,7 @@ public class CalService {
         headers.set("Authorization", "Bearer " + accessKey);
           HttpEntity<String> entity = new HttpEntity<>(headers);
 
-        // Fetch the data from the API
+        
         ResponseEntity<NumbersResponse> response = restTemplate.exchange(
             url,
             HttpMethod.GET,
